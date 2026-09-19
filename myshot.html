@@ -2,25 +2,32 @@
 <html lang="en">
 <head>
 <title>MyShot by Yantra</title>
-<meta name="description" content="Screenshots and screen recording that upload to your own Google Drive and put a shareable link on your clipboard.">
+<meta name="description" content="Screenshots and screen recording that upload to your own Google Drive and put a shareable link on your clipboard. No servers, no telemetry, free.">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora" aria-hidden="true"></div>
 <header class="masthead">
   <div class="wrap">
-    <a class="mark" href="index.html"><span class="glyph">यं</span>Yantra</a>
+    <a class="mark" href="index.html"><svg class="sigil" viewBox="0 0 200 200" aria-hidden="true">
+  <g fill="none" stroke="#F0A94C" stroke-width="7">
+    <circle cx="100" cy="100" r="88"/>
+    <path d="M100 26 L166 146 L34 146 Z"/>
+    <path d="M100 174 L34 54 L166 54 Z"/>
+  </g>
+</svg><span class="name">Yantra</span></a>
     <nav class="nav" aria-label="Primary">
       <details class="menu">
         <summary aria-haspopup="true">Products</summary>
         <div class="menu-panel">
-          <a class="menu-item" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared to your own Drive</span></a>
-          <a class="menu-item" href="index.html#products"><b>Product Search for Shopify</b><span>Search that understands intent, not keywords</span></a>
-          <a class="menu-item" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution and analytics for merchants</span></a>
+          <a class="menu-item c1" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared from your own Drive</span></a>
+          <a class="menu-item c2" href="index.html#products"><b>Product Search for Shopify</b><span>Storefront search that reads intent, not keywords</span></a>
+          <a class="menu-item c3" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution that survives the last-click lie</span></a>
         </div>
       </details>
       <a href="index.html#approach">Approach</a>
@@ -31,40 +38,88 @@
 <main>
 <section class="hero">
   <div class="wrap">
-    <p class="label" style="margin-bottom:16px">Yantra · Product 01</p>
-    <h1>MyShot</h1>
-    <p class="lede">Capture a region, annotate it, and get a shareable link on your clipboard — in one
-    keystroke. The file goes to <em>your</em> Google Drive, not ours.</p>
+    <div class="hero-copy">
+      <p class="label" style="margin-bottom:18px">Yantra · Instrument 01</p>
+      <h1>MyShot</h1>
+      <p class="lede">Press one key. Drag a region. The link is already on your clipboard — and the file is
+      in <em>your</em> Google Drive, not ours.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:aryavikram06@gmail.com?subject=MyShot">Tell me when it ships</a>
+        <a class="btn" href="#how">How it works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head"><h2>How it works</h2><span class="label">Capture · Annotate · Share</span></div>
+    <div class="ledger">
+      <div class="entry" style="--c: var(--brass)">
+        <span class="entry-index">01</span>
+        <span class="entry-body">
+          <span class="entry-name">Capture</span>
+          <span class="entry-desc">MyShot draws its own selector on every platform — an 8× magnifier showing
+          true pixels, crosshair guides, a live dimension readout, and arrow-key nudging down to a single
+          physical pixel. Region, full screen, or the active window.</span>
+          <span class="entry-meta">Works on Wayland, where most tools hand you the desktop's own picker</span>
+        </span>
+      </div>
+      <div class="entry" style="--c: var(--cyan)">
+        <span class="entry-index">02</span>
+        <span class="entry-body">
+          <span class="entry-name">Annotate</span>
+          <span class="entry-desc">Arrows, boxes, circles, text, freehand, highlighter, numbered counters,
+          crop and blur — with full undo across every one of them. Blur genuinely destroys what's underneath,
+          so a redaction survives being shared, zoomed and re-saved.</span>
+          <span class="entry-meta">Optional — skip straight to sharing if the raw capture is enough</span>
+        </span>
+      </div>
+      <div class="entry" style="--c: var(--violet)">
+        <span class="entry-index">03</span>
+        <span class="entry-body">
+          <span class="entry-name">Share</span>
+          <span class="entry-desc">The file uploads to your Drive, filed by type and month, and a link lands
+          on the clipboard. Paste it into Slack or GitHub and the image renders inline rather than showing a
+          dead link card.</span>
+          <span class="entry-meta">Offline or signed out, captures queue and upload later — nothing is lost</span>
+        </span>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2>How it works</h2><span class="label">Three steps</span></div>
-    <div class="ledger">
-      <div class="entry">
-        <span class="entry-index">01</span>
-        <span class="entry-body">
-          <span class="entry-name">Capture</span>
-          <span class="entry-desc">Press a shortcut and select a region. MyShot draws its own selector —
-          magnifier, crosshairs, live dimensions, pixel-accurate keyboard nudging — on every platform.</span>
-        </span>
+    <div class="section-head"><h2>Details that took the longest</h2><span class="label">Four of them</span></div>
+    <div class="principles">
+      <div class="principle" style="--c: var(--brass)">
+        <span class="num">01</span>
+        <h3>Pixel-exact on fractional scaling</h3>
+        <p>On a 125%-scaled display, the toolkit reports a device pixel ratio of 2.0 while the true scale is
+        1.25. Trusting it puts every crop out by 60%. MyShot derives scale from the captured image itself, so
+        the region you drew is the region you get.</p>
       </div>
-      <div class="entry">
-        <span class="entry-index">02</span>
-        <span class="entry-body">
-          <span class="entry-name">Annotate</span>
-          <span class="entry-desc">Arrows, boxes, text, highlights, counters and blur, with full undo.
-          Blur properly obscures what is under it, so redactions survive being shared.</span>
-        </span>
+      <div class="principle" style="--c: var(--cyan)">
+        <span class="num">02</span>
+        <h3>A real selector on Wayland</h3>
+        <p>Wayland forbids apps from reading the screen, so most tools surrender and show the desktop's own
+        screenshot UI. MyShot asks the system for pixels silently, then draws its own selector over them —
+        same magnifier, same crosshairs, same shortcuts as everywhere else.</p>
       </div>
-      <div class="entry">
-        <span class="entry-index">03</span>
-        <span class="entry-body">
-          <span class="entry-name">Share</span>
-          <span class="entry-desc">The capture uploads to your Drive, organised by type and month, and the
-          link lands on your clipboard. Offline or signed out, it queues and uploads later — nothing is lost.</span>
-        </span>
+      <div class="principle" style="--c: var(--violet)">
+        <span class="num">03</span>
+        <h3>A capture is never lost</h3>
+        <p>If the upload fails — no network, expired session, Drive having a bad day — the capture stays
+        queued on disk with its retry schedule and drains when things recover. Failure is designed for, not
+        discovered later.</p>
+      </div>
+      <div class="principle" style="--c: var(--rose)">
+        <span class="num">04</span>
+        <h3>You decide what "shared" means</h3>
+        <p>Before the very first upload MyShot asks whether links should be public or private, and explains
+        the trade-off in plain words. Screenshots routinely catch passwords, tokens and customer data; that
+        isn't a default anyone should set on your behalf.</p>
       </div>
     </div>
   </div>
@@ -76,13 +131,18 @@
     <div class="table-scroll">
       <table class="spec">
         <tbody>
-          <tr><th>Platforms</th><td>Linux (X11 and Wayland), Windows. macOS planned for a later release.</td></tr>
-          <tr><th>Capture</th><td>Region, full screen, active window. Screen recording to MP4 with hardware encoding.</td></tr>
-          <tr><th>Storage</th><td>Your own Google Drive, under your storage quota, owned by you.</td></tr>
-          <tr><th>Google permission</th><td><code>drive.file</code> — access limited to files MyShot created. It cannot read the rest of your Drive.</td></tr>
-          <tr><th>Sharing</th><td>Link-only, never web-indexed. You choose public or restricted before the first upload.</td></tr>
-          <tr><th>Offline</th><td>Captures queue and upload when a connection returns. Nothing is discarded.</td></tr>
+          <tr><th>Platforms</th><td>Linux on X11 and Wayland, and Windows. macOS is planned for a later release.</td></tr>
+          <tr><th>Capture modes</th><td>Region, full screen, active window. Screen recording to MP4 with hardware encoding where available.</td></tr>
+          <tr><th>Annotation</th><td>Arrow, rectangle, ellipse, text, pen, highlighter, blur, numbered counter, crop — all undoable.</td></tr>
+          <tr><th>File naming</th><td><code>myshot_2026-09-19_14-30-45.png</code> — sorts chronologically, legal on every platform.</td></tr>
+          <tr><th>Storage</th><td>Your own Google Drive, under your quota, owned by you. Organised as <code>MyShot/Screenshots/2026-09/</code>.</td></tr>
+          <tr><th>Google permission</th><td><code>drive.file</code> only — access limited to files MyShot created. It cannot read the rest of your Drive.</td></tr>
+          <tr><th>Sharing</th><td>Link-only and never web-indexed. Public or restricted, your choice, changeable any time.</td></tr>
+          <tr><th>Offline</th><td>Captures queue on disk and upload when a connection returns.</td></tr>
+          <tr><th>Local history</th><td>Searchable history of every capture, with thumbnails and Drive links.</td></tr>
+          <tr><th>Global hotkeys</th><td>Configurable, with a documented fallback on desktops that block key grabbing.</td></tr>
           <tr><th>Telemetry</th><td>None.</td></tr>
+          <tr><th>Account required</th><td>None. Google sign-in is optional and only needed for Drive upload.</td></tr>
           <tr><th>Price</th><td>Free.</td></tr>
         </tbody>
       </table>
@@ -92,28 +152,31 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2>On privacy</h2></div>
+    <div class="section-head"><h2>On privacy</h2><span class="label">The short version</span></div>
     <div class="note">
       <p>MyShot has no accounts and no servers. Your captures live on your computer and, if you connect
-      Drive, in your own Google account. We never receive them.</p>
+      Drive, in your own Google account. We never receive them, and there is nothing for us to leak.</p>
     </div>
-    <p>Sharing a file publicly means anyone holding the link can view it. Screenshots routinely capture
-    passwords, tokens and customer data, so MyShot asks you to choose before the first upload rather than
-    deciding for you. Full detail in the <a href="privacy.html" style="color:var(--brass)">privacy policy</a>.</p>
+    <p>A public link means anyone holding the URL can view that file — not listed, not searchable, but not
+    private either. MyShot asks you to choose before the first upload instead of deciding for you. The full
+    detail is in the <a href="privacy.html" class="glow">privacy policy</a>.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2>Status</h2><span class="chip building">In development</span></div>
-    <p class="lede">MyShot is being built in the open and is not yet generally available.
-    <a href="mailto:aryavikram06@gmail.com" style="color:var(--brass)">Email us</a> if you would like to know when it ships.</p>
+    <div class="section-head"><h2>Status</h2><span class="chip" style="--c: var(--brass)">In development</span></div>
+    <p class="lede">Capture, Drive upload and sharing work today. The annotation editor, system tray and
+    global hotkeys are being built now. MyShot is not yet generally available.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:aryavikram06@gmail.com?subject=MyShot">Tell me when it ships</a>
+    </div>
   </div>
 </section>
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span class="colophon">© 2026 Yantra</span>
+    <span class="colophon">© 2026 Yantra · Built in India</span>
     <nav class="foot-links" aria-label="Footer">
       <a href="myshot.html">MyShot</a>
       <a href="privacy.html">Privacy</a>
@@ -123,18 +186,13 @@
   </div>
 </footer>
 <script>
-  // Close the products menu on outside click or Escape.
   document.addEventListener('click', function (e) {
     document.querySelectorAll('details.menu[open]').forEach(function (d) {
       if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      document.querySelectorAll('details.menu[open]').forEach(function (d) {
-        d.removeAttribute('open');
-      });
-    }
+    if (e.key === 'Escape') document.querySelectorAll('details.menu[open]').forEach(function (d) { d.removeAttribute('open'); });
   });
 </script>
 </body>

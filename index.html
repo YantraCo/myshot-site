@@ -2,25 +2,32 @@
 <html lang="en">
 <head>
 <title>Yantra</title>
-<meta name="description" content="Yantra is a software studio building small, precise instruments: MyShot, and two apps for Shopify merchants.">
+<meta name="description" content="Yantra builds small, exact software: MyShot, and two apps for Shopify merchants. No telemetry, narrow permissions, your data stays yours.">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora" aria-hidden="true"></div>
 <header class="masthead">
   <div class="wrap">
-    <a class="mark" href="index.html"><span class="glyph">यं</span>Yantra</a>
+    <a class="mark" href="index.html"><svg class="sigil" viewBox="0 0 200 200" aria-hidden="true">
+  <g fill="none" stroke="#F0A94C" stroke-width="7">
+    <circle cx="100" cy="100" r="88"/>
+    <path d="M100 26 L166 146 L34 146 Z"/>
+    <path d="M100 174 L34 54 L166 54 Z"/>
+  </g>
+</svg><span class="name">Yantra</span></a>
     <nav class="nav" aria-label="Primary">
       <details class="menu">
         <summary aria-haspopup="true">Products</summary>
         <div class="menu-panel">
-          <a class="menu-item" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared to your own Drive</span></a>
-          <a class="menu-item" href="index.html#products"><b>Product Search for Shopify</b><span>Search that understands intent, not keywords</span></a>
-          <a class="menu-item" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution and analytics for merchants</span></a>
+          <a class="menu-item c1" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared from your own Drive</span></a>
+          <a class="menu-item c2" href="index.html#products"><b>Product Search for Shopify</b><span>Storefront search that reads intent, not keywords</span></a>
+          <a class="menu-item c3" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution that survives the last-click lie</span></a>
         </div>
       </details>
       <a href="index.html#approach">Approach</a>
@@ -31,10 +38,36 @@
 <main>
 <section class="hero">
   <div class="wrap">
-    <p class="devanagari">यन्त्र</p>
-    <h1>Instruments, not platforms.</h1>
-    <p class="lede"><em>Yantra</em> is Sanskrit for <em>instrument</em> — a device built for one job,
-    done exactly. That is the whole brief. We make small, precise software and finish it.</p>
+    <div class="hero-copy">
+      <p class="devanagari">यन्त्र</p>
+      <h1>Instruments, <span class="accent">not platforms.</span></h1>
+      <p class="lede">A <em>yantra</em> is an instrument — and, in Indian tradition, a geometric figure
+      where every line is placed for a reason. Both meanings are the brief. We build small, exact software
+      and finish it, rather than platforms that grow forever and settle nothing.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="myshot.html">See MyShot →</a>
+        <a class="btn" href="#products">All products</a>
+      </div>
+    </div>
+    <svg class="sigil-large" viewBox="0 0 200 200" role="img" aria-label="Yantra geometric figure">
+  <g class="spin" fill="none" stroke="#F0A94C" stroke-width="0.7" opacity=".55">
+    <circle cx="100" cy="100" r="94"/>
+    <circle cx="100" cy="100" r="88" stroke-dasharray="2 7"/>
+  </g>
+  <g class="spin-r" fill="none" stroke="#3FC7D4" stroke-width="0.6" opacity=".45">
+    <circle cx="100" cy="100" r="78" stroke-dasharray="14 9"/>
+  </g>
+  <g class="pulse" fill="none" stroke-width="1.1">
+    <path d="M100 22 L168 152 L32 152 Z" stroke="#F0A94C" opacity=".85"/>
+    <path d="M100 178 L32 48 L168 48 Z" stroke="#8E7BF2" opacity=".75"/>
+    <path d="M100 46 L149 138 L51 138 Z" stroke="#3FC7D4" opacity=".7"/>
+    <path d="M100 154 L51 62 L149 62 Z" stroke="#F0688C" opacity=".65"/>
+    <path d="M100 66 L133 126 L67 126 Z" stroke="#F0A94C" opacity=".6"/>
+    <path d="M100 134 L67 74 L133 74 Z" stroke="#3FC7D4" opacity=".55"/>
+  </g>
+  <circle cx="100" cy="100" r="4.5" fill="#F0A94C"/>
+  <circle cx="100" cy="100" r="11" fill="none" stroke="#F0A94C" stroke-width="0.8" opacity=".6"/>
+</svg>
   </div>
 </section>
 
@@ -42,38 +75,43 @@
   <div class="wrap">
     <div class="section-head">
       <h2>What we make</h2>
-      <span class="label">Three products</span>
+      <span class="label">Three instruments</span>
     </div>
     <div class="ledger">
-      <a class="entry" href="myshot.html">
+      <a class="entry" href="myshot.html" style="--c: var(--brass)">
         <span class="entry-index">01</span>
         <span class="entry-body">
           <span class="entry-name">MyShot</span>
-          <span class="entry-desc">Screenshots and screen recording that upload to <em>your own</em> Google
-          Drive and put a shareable link on your clipboard. One keystroke, no account, no servers of ours.</span>
-          <span class="entry-meta">Desktop · Linux, Windows</span>
+          <span class="entry-desc">Press one key, drag a region, and a shareable link is already on your
+          clipboard. The file lands in <em>your</em> Google Drive — not ours — because we run no servers and
+          store nothing. Annotate before sharing, or don't; it takes the same keystroke either way.</span>
+          <span class="tags"><span class="tag">Desktop</span><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Free</span></span>
         </span>
-        <span class="chip building">In development</span>
+        <span class="chip">In development</span>
       </a>
-      <div class="entry">
+
+      <div class="entry" style="--c: var(--cyan)">
         <span class="entry-index">02</span>
         <span class="entry-body">
           <span class="entry-name">Product Search for Shopify</span>
-          <span class="entry-desc">Storefront search that reads intent rather than matching keywords, so
-          shoppers find the thing they were describing instead of the thing they spelled correctly.</span>
-          <span class="entry-meta">Shopify app</span>
+          <span class="entry-desc">Storefront search that reads what a shopper meant rather than matching
+          the characters they typed. Someone searching "warm jacket for rain" should find the insulated
+          shell, not an empty results page because nobody wrote those four words into the product title.</span>
+          <span class="tags"><span class="tag">Shopify app</span><span class="tag">Semantic search</span><span class="tag">Merchandising</span></span>
         </span>
-        <span class="chip building">In development</span>
+        <span class="chip">In development</span>
       </div>
-      <div class="entry">
+
+      <div class="entry" style="--c: var(--rose)">
         <span class="entry-index">03</span>
         <span class="entry-body">
           <span class="entry-name">Conversion Tracking for Shopify</span>
-          <span class="entry-desc">Marketing attribution and analytics for merchants who need to know which
-          spend actually produced the order, not which channel claimed it last.</span>
-          <span class="entry-meta">Shopify app</span>
+          <span class="entry-desc">Attribution and analytics for merchants who need to know which spend
+          actually produced the order — not which channel happened to be last in line when the customer
+          finally clicked buy. Multi-touch, first-party, and honest about what it cannot know.</span>
+          <span class="tags"><span class="tag">Shopify app</span><span class="tag">Attribution</span><span class="tag">Analytics</span></span>
         </span>
-        <span class="chip building">In development</span>
+        <span class="chip">In development</span>
       </div>
     </div>
   </div>
@@ -86,25 +124,31 @@
       <span class="label">Four commitments</span>
     </div>
     <div class="principles">
-      <div class="principle">
-        <p class="label">Your data stays yours</p>
-        <p>MyShot uploads to the Drive account you already own. Files count against your storage, stay
-        under your control, and never touch a server of ours — because we do not run one.</p>
+      <div class="principle" style="--c: var(--brass)">
+        <span class="num">01</span>
+        <h3>Your data stays yours</h3>
+        <p>MyShot uploads to the Google Drive account you already own. Files sit under your storage quota,
+        stay owned by you, and never pass through infrastructure of ours — because there isn't any. If every
+        service we run vanished tomorrow, the app would keep working.</p>
       </div>
-      <div class="principle">
-        <p class="label">The narrowest permission</p>
+      <div class="principle" style="--c: var(--cyan)">
+        <span class="num">02</span>
+        <h3>The narrowest permission</h3>
         <p>We ask for the least access that does the job. MyShot requests Google's <code>drive.file</code>
-        scope, which can only ever see files the app itself created — never the rest of your Drive.</p>
+        scope, which can only ever see files the app itself created. We verified this against a real account:
+        listing files returned zero results for everything MyShot hadn't made.</p>
       </div>
-      <div class="principle">
-        <p class="label">No telemetry</p>
-        <p>No analytics, no crash reporting, no usage statistics, no advertising identifiers. Nothing
-        phones home. We find out how the software behaves by using it ourselves.</p>
+      <div class="principle" style="--c: var(--violet)">
+        <span class="num">03</span>
+        <h3>No telemetry, at all</h3>
+        <p>No analytics, no crash reporting, no usage counters, no advertising identifiers. Nothing phones
+        home, including in paid versions. We learn how the software behaves by using it every day ourselves.</p>
       </div>
-      <div class="principle">
-        <p class="label">Small and finished</p>
-        <p>Three tools that work beat one platform that almost does. Each product is scoped to a job a
-        person can describe in a sentence, then built until it is genuinely done.</p>
+      <div class="principle" style="--c: var(--rose)">
+        <span class="num">04</span>
+        <h3>Small and finished</h3>
+        <p>Three tools that work beat one platform that almost does. Each product is scoped to a job you can
+        describe in a sentence, then built until it's genuinely done rather than perpetually in beta.</p>
       </div>
     </div>
   </div>
@@ -112,15 +156,19 @@
 
 <section class="section" id="contact">
   <div class="wrap">
-    <div class="section-head"><h2>Get in touch</h2></div>
-    <p class="lede">Questions, bug reports, or something you think we should build —
-    <a href="mailto:aryavikram06@gmail.com" style="color:var(--brass)">aryavikram06@gmail.com</a>.</p>
+    <div class="section-head"><h2>Get in touch</h2><span class="label">We read everything</span></div>
+    <p class="lede">Questions, bug reports, or something you think should exist —
+    <a href="mailto:aryavikram06@gmail.com" class="glow">aryavikram06@gmail.com</a></p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:aryavikram06@gmail.com">Email us</a>
+      <a class="btn" href="myshot.html">Read about MyShot</a>
+    </div>
   </div>
 </section>
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span class="colophon">© 2026 Yantra</span>
+    <span class="colophon">© 2026 Yantra · Built in India</span>
     <nav class="foot-links" aria-label="Footer">
       <a href="myshot.html">MyShot</a>
       <a href="privacy.html">Privacy</a>
@@ -130,18 +178,13 @@
   </div>
 </footer>
 <script>
-  // Close the products menu on outside click or Escape.
   document.addEventListener('click', function (e) {
     document.querySelectorAll('details.menu[open]').forEach(function (d) {
       if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      document.querySelectorAll('details.menu[open]').forEach(function (d) {
-        d.removeAttribute('open');
-      });
-    }
+    if (e.key === 'Escape') document.querySelectorAll('details.menu[open]').forEach(function (d) { d.removeAttribute('open'); });
   });
 </script>
 </body>

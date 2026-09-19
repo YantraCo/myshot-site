@@ -7,20 +7,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora" aria-hidden="true"></div>
 <header class="masthead">
   <div class="wrap">
-    <a class="mark" href="index.html"><span class="glyph">यं</span>Yantra</a>
+    <a class="mark" href="index.html"><svg class="sigil" viewBox="0 0 200 200" aria-hidden="true">
+  <g fill="none" stroke="#F0A94C" stroke-width="7">
+    <circle cx="100" cy="100" r="88"/>
+    <path d="M100 26 L166 146 L34 146 Z"/>
+    <path d="M100 174 L34 54 L166 54 Z"/>
+  </g>
+</svg><span class="name">Yantra</span></a>
     <nav class="nav" aria-label="Primary">
       <details class="menu">
         <summary aria-haspopup="true">Products</summary>
         <div class="menu-panel">
-          <a class="menu-item" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared to your own Drive</span></a>
-          <a class="menu-item" href="index.html#products"><b>Product Search for Shopify</b><span>Search that understands intent, not keywords</span></a>
-          <a class="menu-item" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution and analytics for merchants</span></a>
+          <a class="menu-item c1" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared from your own Drive</span></a>
+          <a class="menu-item c2" href="index.html#products"><b>Product Search for Shopify</b><span>Storefront search that reads intent, not keywords</span></a>
+          <a class="menu-item c3" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution that survives the last-click lie</span></a>
         </div>
       </details>
       <a href="index.html#approach">Approach</a>
@@ -30,6 +37,7 @@
 </header>
 <main class="prose">
   <div class="wrap">
+
 
   <h1>Terms of Service</h1>
   <p class="label">Last updated: 19 September 2026</p>
@@ -86,11 +94,12 @@
   <h2>9. Contact</h2>
   <p><a href="mailto:aryavikram06@gmail.com">aryavikram06@gmail.com</a></p>
 
+  
   </div>
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span class="colophon">© 2026 Yantra</span>
+    <span class="colophon">© 2026 Yantra · Built in India</span>
     <nav class="foot-links" aria-label="Footer">
       <a href="myshot.html">MyShot</a>
       <a href="privacy.html">Privacy</a>
@@ -100,18 +109,13 @@
   </div>
 </footer>
 <script>
-  // Close the products menu on outside click or Escape.
   document.addEventListener('click', function (e) {
     document.querySelectorAll('details.menu[open]').forEach(function (d) {
       if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      document.querySelectorAll('details.menu[open]').forEach(function (d) {
-        d.removeAttribute('open');
-      });
-    }
+    if (e.key === 'Escape') document.querySelectorAll('details.menu[open]').forEach(function (d) { d.removeAttribute('open'); });
   });
 </script>
 </body>
