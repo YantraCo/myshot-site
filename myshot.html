@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MyShot by Yantra</title>
+<meta name="description" content="Screenshots and screen recording that upload to your own Google Drive and put a shareable link on your clipboard.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="index.html"><span class="glyph">यं</span>Yantra</a>
+    <nav class="nav" aria-label="Primary">
+      <details class="menu">
+        <summary aria-haspopup="true">Products</summary>
+        <div class="menu-panel">
+          <a class="menu-item" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared to your own Drive</span></a>
+          <a class="menu-item" href="index.html#products"><b>Product Search for Shopify</b><span>Search that understands intent, not keywords</span></a>
+          <a class="menu-item" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution and analytics for merchants</span></a>
+        </div>
+      </details>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <p class="label" style="margin-bottom:16px">Yantra · Product 01</p>
+    <h1>MyShot</h1>
+    <p class="lede">Capture a region, annotate it, and get a shareable link on your clipboard — in one
+    keystroke. The file goes to <em>your</em> Google Drive, not ours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>How it works</h2><span class="label">Three steps</span></div>
+    <div class="ledger">
+      <div class="entry">
+        <span class="entry-index">01</span>
+        <span class="entry-body">
+          <span class="entry-name">Capture</span>
+          <span class="entry-desc">Press a shortcut and select a region. MyShot draws its own selector —
+          magnifier, crosshairs, live dimensions, pixel-accurate keyboard nudging — on every platform.</span>
+        </span>
+      </div>
+      <div class="entry">
+        <span class="entry-index">02</span>
+        <span class="entry-body">
+          <span class="entry-name">Annotate</span>
+          <span class="entry-desc">Arrows, boxes, text, highlights, counters and blur, with full undo.
+          Blur properly obscures what is under it, so redactions survive being shared.</span>
+        </span>
+      </div>
+      <div class="entry">
+        <span class="entry-index">03</span>
+        <span class="entry-body">
+          <span class="entry-name">Share</span>
+          <span class="entry-desc">The capture uploads to your Drive, organised by type and month, and the
+          link lands on your clipboard. Offline or signed out, it queues and uploads later — nothing is lost.</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Specification</h2></div>
+    <div class="table-scroll">
+      <table class="spec">
+        <tbody>
+          <tr><th>Platforms</th><td>Linux (X11 and Wayland), Windows. macOS planned for a later release.</td></tr>
+          <tr><th>Capture</th><td>Region, full screen, active window. Screen recording to MP4 with hardware encoding.</td></tr>
+          <tr><th>Storage</th><td>Your own Google Drive, under your storage quota, owned by you.</td></tr>
+          <tr><th>Google permission</th><td><code>drive.file</code> — access limited to files MyShot created. It cannot read the rest of your Drive.</td></tr>
+          <tr><th>Sharing</th><td>Link-only, never web-indexed. You choose public or restricted before the first upload.</td></tr>
+          <tr><th>Offline</th><td>Captures queue and upload when a connection returns. Nothing is discarded.</td></tr>
+          <tr><th>Telemetry</th><td>None.</td></tr>
+          <tr><th>Price</th><td>Free.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>On privacy</h2></div>
+    <div class="note">
+      <p>MyShot has no accounts and no servers. Your captures live on your computer and, if you connect
+      Drive, in your own Google account. We never receive them.</p>
+    </div>
+    <p>Sharing a file publicly means anyone holding the link can view it. Screenshots routinely capture
+    passwords, tokens and customer data, so MyShot asks you to choose before the first upload rather than
+    deciding for you. Full detail in the <a href="privacy.html" style="color:var(--brass)">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Status</h2><span class="chip building">In development</span></div>
+    <p class="lede">MyShot is being built in the open and is not yet generally available.
+    <a href="mailto:aryavikram06@gmail.com" style="color:var(--brass)">Email us</a> if you would like to know when it ships.</p>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span class="colophon">© 2026 Yantra</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="myshot.html">MyShot</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:aryavikram06@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Close the products menu on outside click or Escape.
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('details.menu[open]').forEach(function (d) {
+      if (!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('details.menu[open]').forEach(function (d) {
+        d.removeAttribute('open');
+      });
+    }
+  });
+</script>
+</body>
+</html>

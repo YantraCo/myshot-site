@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>MyShot Terms of Service</title>
+<meta name="description" content="Terms governing use of MyShot, a product of Yantra.">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Terms of Service — MyShot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="index.html"><span class="glyph">यं</span>Yantra</a>
+    <nav class="nav" aria-label="Primary">
+      <details class="menu">
+        <summary aria-haspopup="true">Products</summary>
+        <div class="menu-panel">
+          <a class="menu-item" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared to your own Drive</span></a>
+          <a class="menu-item" href="index.html#products"><b>Product Search for Shopify</b><span>Search that understands intent, not keywords</span></a>
+          <a class="menu-item" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution and analytics for merchants</span></a>
+        </div>
+      </details>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="prose">
+  <div class="wrap">
+
   <h1>Terms of Service</h1>
-  <p class="updated">Last updated: 19 September 2026</p>
+  <p class="label">Last updated: 19 September 2026</p>
 
   <h2>1. Agreement</h2>
   <p>By installing or using MyShot ("the Software") you agree to these terms. If you do
@@ -24,7 +47,7 @@
   <h2>3. Your content and your responsibility</h2>
   <p>You retain all rights to the screenshots and recordings you create. You are solely
   responsible for what you capture, store and share.</p>
-  <div class="callout">
+  <div class="note">
     <strong>Shared links are public.</strong> If you enable public sharing, anyone with
     the link can view that file. You are responsible for ensuring you have the right to
     capture and share the content, and for not exposing credentials, personal data or
@@ -63,11 +86,33 @@
   <h2>9. Contact</h2>
   <p><a href="mailto:aryavikram06@gmail.com">aryavikram06@gmail.com</a></p>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="privacy.html">Privacy Policy</a>
-  </nav>
-  <p class="updated" style="margin-top:24px">A product of Yantra</p>
-</div>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span class="colophon">© 2026 Yantra</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="myshot.html">MyShot</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:aryavikram06@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Close the products menu on outside click or Escape.
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('details.menu[open]').forEach(function (d) {
+      if (!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('details.menu[open]').forEach(function (d) {
+        d.removeAttribute('open');
+      });
+    }
+  });
+</script>
 </body>
 </html>

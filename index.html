@@ -1,51 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Yantra</title>
+<meta name="description" content="Yantra is a software studio building small, precise instruments: MyShot, and two apps for Shopify merchants.">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MyShot</title>
-<meta name="description" content="Cross-platform screenshot and screen recording with native Google Drive sharing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <h1>MyShot</h1>
-  <p class="lede">Cross-platform screenshot and screen recording with native Google Drive sharing.
-  Capture, annotate, and get a shareable link on your clipboard in one keystroke.</p>
-
-  <div class="callout">
-    <strong>Your files stay yours.</strong> Screenshots upload to <em>your own</em> Google Drive.
-    MyShot runs no servers and never stores your captures.
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="index.html"><span class="glyph">यं</span>Yantra</a>
+    <nav class="nav" aria-label="Primary">
+      <details class="menu">
+        <summary aria-haspopup="true">Products</summary>
+        <div class="menu-panel">
+          <a class="menu-item" href="myshot.html"><b>MyShot</b><span>Screenshots and recordings, shared to your own Drive</span></a>
+          <a class="menu-item" href="index.html#products"><b>Product Search for Shopify</b><span>Search that understands intent, not keywords</span></a>
+          <a class="menu-item" href="index.html#products"><b>Conversion Tracking for Shopify</b><span>Attribution and analytics for merchants</span></a>
+        </div>
+      </details>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
   </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <p class="devanagari">यन्त्र</p>
+    <h1>Instruments, not platforms.</h1>
+    <p class="lede"><em>Yantra</em> is Sanskrit for <em>instrument</em> — a device built for one job,
+    done exactly. That is the whole brief. We make small, precise software and finish it.</p>
+  </div>
+</section>
 
-  <h2>How it works</h2>
-  <ul>
-    <li>Press a shortcut, select a region</li>
-    <li>MyShot saves it locally and uploads it to your Google Drive</li>
-    <li>A shareable link lands on your clipboard</li>
-  </ul>
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we make</h2>
+      <span class="label">Three products</span>
+    </div>
+    <div class="ledger">
+      <a class="entry" href="myshot.html">
+        <span class="entry-index">01</span>
+        <span class="entry-body">
+          <span class="entry-name">MyShot</span>
+          <span class="entry-desc">Screenshots and screen recording that upload to <em>your own</em> Google
+          Drive and put a shareable link on your clipboard. One keystroke, no account, no servers of ours.</span>
+          <span class="entry-meta">Desktop · Linux, Windows</span>
+        </span>
+        <span class="chip building">In development</span>
+      </a>
+      <div class="entry">
+        <span class="entry-index">02</span>
+        <span class="entry-body">
+          <span class="entry-name">Product Search for Shopify</span>
+          <span class="entry-desc">Storefront search that reads intent rather than matching keywords, so
+          shoppers find the thing they were describing instead of the thing they spelled correctly.</span>
+          <span class="entry-meta">Shopify app</span>
+        </span>
+        <span class="chip building">In development</span>
+      </div>
+      <div class="entry">
+        <span class="entry-index">03</span>
+        <span class="entry-body">
+          <span class="entry-name">Conversion Tracking for Shopify</span>
+          <span class="entry-desc">Marketing attribution and analytics for merchants who need to know which
+          spend actually produced the order, not which channel claimed it last.</span>
+          <span class="entry-meta">Shopify app</span>
+        </span>
+        <span class="chip building">In development</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <h2>Platforms</h2>
-  <table>
-    <tr><th>Linux (X11 and Wayland)</th><td>Supported</td></tr>
-    <tr><th>Windows</th><td>Supported</td></tr>
-    <tr><th>macOS</th><td>Planned for a later release</td></tr>
-  </table>
+<section class="section" id="approach">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How we build</h2>
+      <span class="label">Four commitments</span>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <p class="label">Your data stays yours</p>
+        <p>MyShot uploads to the Drive account you already own. Files count against your storage, stay
+        under your control, and never touch a server of ours — because we do not run one.</p>
+      </div>
+      <div class="principle">
+        <p class="label">The narrowest permission</p>
+        <p>We ask for the least access that does the job. MyShot requests Google's <code>drive.file</code>
+        scope, which can only ever see files the app itself created — never the rest of your Drive.</p>
+      </div>
+      <div class="principle">
+        <p class="label">No telemetry</p>
+        <p>No analytics, no crash reporting, no usage statistics, no advertising identifiers. Nothing
+        phones home. We find out how the software behaves by using it ourselves.</p>
+      </div>
+      <div class="principle">
+        <p class="label">Small and finished</p>
+        <p>Three tools that work beat one platform that almost does. Each product is scoped to a job a
+        person can describe in a sentence, then built until it is genuinely done.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <h2>Privacy in one line</h2>
-  <p>MyShot requests the narrowest Google Drive permission that exists
-  (<code>drive.file</code>), which lets it see only the files it created itself — never
-  the rest of your Drive. It collects no analytics and sends nothing to us.</p>
-
-  <h2>Status</h2>
-  <p>MyShot is in active development and not yet generally available.</p>
-
-  <nav>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="mailto:aryavikram06@gmail.com">Contact</a>
-  </nav>
-  <p class="updated" style="margin-top:24px">A product of Yantra</p>
-</div>
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head"><h2>Get in touch</h2></div>
+    <p class="lede">Questions, bug reports, or something you think we should build —
+    <a href="mailto:aryavikram06@gmail.com" style="color:var(--brass)">aryavikram06@gmail.com</a>.</p>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span class="colophon">© 2026 Yantra</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="myshot.html">MyShot</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:aryavikram06@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Close the products menu on outside click or Escape.
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('details.menu[open]').forEach(function (d) {
+      if (!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('details.menu[open]').forEach(function (d) {
+        d.removeAttribute('open');
+      });
+    }
+  });
+</script>
 </body>
 </html>
