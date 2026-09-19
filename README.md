@@ -29,3 +29,5 @@ pages does not expose the application source.
 > data handling changes — server-side accounts, telemetry, a new third-party
 > processor — **update this policy before that release ships**, not after.
 > Sprint 9 in the main repository revises it for the v2 backend.
+
+
