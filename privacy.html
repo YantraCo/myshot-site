@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MyShot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 19 September 2026</p>
+
+  <div class="callout">
+    <strong>The short version.</strong> MyShot is a desktop application. It has no user
+    accounts and no servers. Your screenshots and recordings are stored on your own
+    computer and, if you choose, uploaded to <em>your own</em> Google Drive. We never
+    receive, store or see them. There is no analytics or telemetry of any kind.
+  </div>
+
+  <h2>1. Who this covers</h2>
+  <p>This policy describes how the MyShot desktop application handles your information.
+  MyShot is developed and maintained by Vikram Yadav, contactable at
+  <a href="mailto:aryavikram06@gmail.com">aryavikram06@gmail.com</a>.</p>
+
+  <h2>2. Information we collect</h2>
+  <p><strong>We collect nothing.</strong> MyShot operates no servers and transmits no
+  data to the developer. There are no accounts to create, no usage statistics, no crash
+  reporting and no advertising identifiers.</p>
+
+  <h2>3. Data stored on your computer</h2>
+  <p>MyShot stores the following locally. It never leaves your machine except as
+  described in section 4.</p>
+  <table>
+    <tr><th>Screenshots and recordings</th><td>In your chosen save folder</td></tr>
+    <tr><th>Thumbnails</th><td>Your OS cache directory</td></tr>
+    <tr><th>Capture history</th><td>A local SQLite database: file paths, sizes, dimensions, timestamps and any Drive link</td></tr>
+    <tr><th>Settings</th><td>A local configuration file</td></tr>
+    <tr><th>Google sign-in token</th><td>A local file with owner-only permissions, if you connect Google Drive</td></tr>
+    <tr><th>Diagnostic logs</th><td>Local rotating log files, kept on your machine only</td></tr>
+  </table>
+
+  <h2>4. Google Drive access</h2>
+  <p>Connecting Google Drive is optional. MyShot works fully without it.</p>
+
+  <h3>What we request</h3>
+  <table>
+    <tr><th><code>drive.file</code></th><td>Access limited to files MyShot itself creates. <strong>MyShot cannot see, read or modify any other file in your Drive.</strong></td></tr>
+    <tr><th><code>openid</code>, <code>email</code></th><td>Your email address, shown in the application so you can tell which account is connected</td></tr>
+  </table>
+
+  <h3>How uploads work</h3>
+  <p>Files are uploaded directly from your computer to your Google Drive account. They
+  are stored in your Drive, count against your Google storage, and remain owned by you.
+  <strong>They do not pass through any MyShot server, because none exists.</strong></p>
+
+  <h3>Sharing links</h3>
+  <p>MyShot can mark an uploaded file as viewable by anyone holding its link. Before the
+  first upload you are asked to choose, and you can change it at any time in Settings.</p>
+  <div class="callout">
+    <strong>Please read this carefully.</strong> A public link means anyone who has the
+    URL can view that file. The file is not listed or searchable, but it is not private
+    either. Screenshots frequently capture passwords, access tokens, personal data and
+    confidential information. If you are unsure, choose the restricted option.
+  </div>
+
+  <h2>5. Third parties</h2>
+  <p>The only third party involved is Google, and only if you connect Drive. Your use of
+  Google Drive is governed by the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. MyShot's use
+  of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+  Services User Data Policy</a>, including its Limited Use requirements.</p>
+  <p>We do not sell, rent or share your information, because we do not have it.</p>
+
+  <h2>6. Children</h2>
+  <p>MyShot is not directed at children under 13 and collects no information from anyone.</p>
+
+  <h2>7. Deleting your data</h2>
+  <ul>
+    <li><strong>Disconnect Google:</strong> sign out in MyShot, or revoke access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Remove local data:</strong> delete MyShot's configuration, data and cache
+      folders. Uninstalling removes the application; your captures remain until you delete them.</li>
+    <li><strong>Remove uploaded files:</strong> delete them from your Google Drive as you
+      would any other file. Deleting a file also disables its shared link.</li>
+  </ul>
+  <p>There is no account to close and nothing for us to erase on your behalf.</p>
+
+  <h2>8. Security</h2>
+  <p>Your Google sign-in token is stored with owner-only file permissions. MyShot requests
+  the narrowest Drive permission available so that a compromise of your token cannot
+  expose files MyShot did not create. That said, data on your computer is ultimately as
+  secure as your computer and user account.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes materially, the date above will be updated and the change
+  noted in the application's release notes. If MyShot ever introduces server-side
+  accounts, this policy will be revised and published before that release ships.</p>
+
+  <h2>10. Contact</h2>
+  <p><a href="mailto:aryavikram06@gmail.com">aryavikram06@gmail.com</a></p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+</div>
+</body>
+</html>
